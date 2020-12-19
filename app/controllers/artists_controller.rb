@@ -1,4 +1,5 @@
 class ArtistsController < ApplicationController
+<<<<<<< HEAD
     def show 
         @artist = Artist.find(params[:id])
     end
@@ -25,4 +26,9 @@ class ArtistsController < ApplicationController
     def params_form 
         params.require(:artist).permit(:name, :bio)
     end
+=======
+  def show 
+    @artist = Artist.find(params[:id])
+  end
+>>>>>>> 1ef549fce2a2f71972acfa5d3ea406b952ede987
 end
